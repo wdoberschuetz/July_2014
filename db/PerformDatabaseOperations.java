@@ -13,10 +13,11 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import javax.swing.JOptionPane;
-
 import javax.swing.JTextArea;
 
 import domainObjects.Swimmer;
+import enumerations.Gender;
+import enumerations.Status;
 
 
 public class PerformDatabaseOperations {
@@ -334,7 +335,7 @@ public class PerformDatabaseOperations {
 				
 				// parse string to date
 				//Date date = new SimpleDateFormat("yyyy-MM-dd").parse(dateOfBirth);
-				 
+				/* 
 				// insert the data pulled from db into the text fields
 				AmendSwimmerFrame.forenameTextField.setText(forename);
 				AmendSwimmerFrame.surnameTextField.setText(surname);
@@ -348,7 +349,7 @@ public class PerformDatabaseOperations {
 				AmendSwimmerFrame.nextOfKinPhoneNumberTextField.setText(nextOfKinPhoneNumber);
 				AmendSwimmerFrame.swimClubNameComboBox.setSelectedItem(swimClub);
 				AmendSwimmerFrame.statusComboBox.setSelectedItem(status);
-				AmendSwimmerFrame.swimmerLevelComboBox.setSelectedItem(level);
+				AmendSwimmerFrame.swimmerLevelComboBox.setSelectedItem(level);*/
 				
 				
 				//JOptionPane.showMessageDialog(null, "Please amend Swimmer's details.");
@@ -374,7 +375,7 @@ public class PerformDatabaseOperations {
 	public void updateSwimmerDetails() throws ClassNotFoundException{
 		
 		
-		// get text from all the fields in the form
+		/*// get text from all the fields in the form
 		String forename = AmendSwimmerFrame.forenameTextField.getText();
 		String surname = AmendSwimmerFrame.surnameTextField.getText();
 		Date dateOfBirth = AmendSwimmerFrame.dateOfBirthChosen.getDate();		
@@ -390,7 +391,7 @@ public class PerformDatabaseOperations {
 		String swimClub = AmendSwimmerFrame.swimClubNameComboBox.getSelectedItem().toString();
 		String status = AmendSwimmerFrame.statusComboBox.getSelectedItem().toString();
 		String level = AmendSwimmerFrame.swimmerLevelComboBox.getSelectedItem().toString();
-		
+		*/
 				
 			// create a connection
 			Connection connection = null;
@@ -403,7 +404,7 @@ public class PerformDatabaseOperations {
 				Class.forName("org.sqlite.JDBC");
 				connection = DriverManager.getConnection("jdbc:sqlite:Swimmers.db");
 				System.out.println("Opened database Successfully");
-				
+				/*
 				scriptStatement = connection.createStatement();
 				String dob = (new SimpleDateFormat("yyyy-MM-dd").format(dateOfBirth));
 						
@@ -422,9 +423,9 @@ public class PerformDatabaseOperations {
 												+ "STATUS='" + status + "' "
 												+ "LEVEL='" + level + "' "
 												+ "WHERE ID LIKE '" + idEnteredByCustomer + "';";
-				
+			
 						
-						scriptStatement.executeUpdate(updateCustomerDetails);
+						scriptStatement.executeUpdate(updateCustomerDetails);	*/
 						scriptStatement.close();
 						connection.close();
 						

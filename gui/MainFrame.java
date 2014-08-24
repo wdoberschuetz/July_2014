@@ -8,16 +8,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
-
-
-
-
-
-
-
-
-
-
 //import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -26,10 +16,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
 import db.PerformDatabaseOperations;
-import domainObjects.InternationalGala;
-import domainObjects.NationalGala;
-import aoop2_project.Swimmer.Gender;
-import aoop2_project.Swimmer.Status;
+import enumerations.*;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
@@ -113,14 +100,14 @@ public class MainFrame extends JFrame{
 		// Menu item Gala -> Cancel
 		item = new JMenuItem("Cancel");
 		galaMenu.add(item);
-		CancelGalaHandler cancelGalaHandler = new CancelGalaHandler();
-		item.addActionListener(cancelGalaHandler);
+	//	CancelGalaHandler cancelGalaHandler = new CancelGalaHandler();
+	//	item.addActionListener(cancelGalaHandler);
 		
 		// Menu item Gala -> View
 		item = new JMenuItem("View");
 		galaMenu.add(item);
-		ViewGalaHandler viewGalaHandler = new ViewGalaHandler();
-		item.addActionListener(viewGalaHandler);
+	//	ViewGalaHandler viewGalaHandler = new ViewGalaHandler();
+	//	item.addActionListener(viewGalaHandler);
 		
 		// Menu item Competition -> View qulifying swimmers
 	//	item = new JMenuItem("View qualifying swimmers");
@@ -228,7 +215,7 @@ public class MainFrame extends JFrame{
 		
 	}
 	
-	class CancelGalaHandler implements ActionListener{
+	/*class CancelGalaHandler implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -290,7 +277,7 @@ public class MainFrame extends JFrame{
 									JOptionPane.showMessageDialog(null, String.format("Gala with ID number of %d has been deleted", 
 											inputAsInteger), "Confirmation", JOptionPane.INFORMATION_MESSAGE);
 								}
-							}
+						}	
 						}else{
 							JOptionPane.showMessageDialog(null, 
 									String.format("Please enter a number greater than 0 or greater than the size of the array which is %d",
@@ -342,7 +329,7 @@ public class MainFrame extends JFrame{
 			
 		}
 		
-	}
+	}*/
 	
 	class DoIQualifyHandler implements ActionListener{
 		
@@ -382,4 +369,4 @@ public class MainFrame extends JFrame{
 	}
 	
 }
-	
+					

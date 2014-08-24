@@ -1,7 +1,5 @@
 package gui;
 
-
-//import GUI and event handling packages
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Date;
@@ -11,8 +9,8 @@ import javax.swing.*;
 
 import com.toedter.calendar.JDateChooser;
 
-import aoop2_project.Swimmer.Gender;
-import aoop2_project.Swimmer.Status;
+import enumerations.Gender;
+import enumerations.Status;
 
 public class AmendSwimmerFrame extends JFrame{
 	
@@ -38,7 +36,7 @@ public class AmendSwimmerFrame extends JFrame{
 	
 	
 	// textfields and comboboxes
-	static JTextField forenameTextField;
+	public static JTextField forenameTextField;
 	static JTextField surnameTextField;
 	static JDateChooser dateOfBirthChosen;
 	static JComboBox<Gender> genderComboBox;

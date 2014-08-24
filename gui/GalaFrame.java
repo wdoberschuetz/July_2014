@@ -19,13 +19,11 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-import aoop1_project.Swimmer;
-import aoop2_project.InternationalGala.TypeOfTiming;
+import domainObjects.Swimmer;
+import enumerations.TypeOfTiming;
 
 import com.toedter.calendar.JDateChooser;
 
-import domainObjects.InternationalGala;
-import domainObjects.NationalGala;
 
 public class GalaFrame extends JFrame{
 
@@ -81,16 +79,16 @@ public class GalaFrame extends JFrame{
 		private String[] typesOfTimingArray = {"electronic", "manual"};
 		
 		//declare arraylist of galas
-		static ArrayList<NationalGala> nationalGalaArrayList;
-		static ArrayList<InternationalGala> internationalGalaArrayList;
+	//	static ArrayList<NationalGala> nationalGalaArrayList;
+	//	static ArrayList<InternationalGala> internationalGalaArrayList;
 		
 	
 	
 	public GalaFrame(){
 		createGalaFrame();
-		populateNationalGalaArrayList();
-		populateInternationalGalaArrayList();
-		
+	//	populateNationalGalaArrayList();
+	//	populateInternationalGalaArrayList();
+	//	
 	}
 	
 	public static void main(String[] abc){
@@ -264,7 +262,7 @@ public class GalaFrame extends JFrame{
 		
 	}
 	
-	@SuppressWarnings("deprecation")
+/*	@SuppressWarnings("deprecation")
 	public static void populateNationalGalaArrayList(){
 		
 		
@@ -282,11 +280,11 @@ public class GalaFrame extends JFrame{
 		nationalGalaArrayList.add(nationalGala4);
 		
 			
-	}
+	}*/
 	
 	@SuppressWarnings("deprecation")
 	
-	public static void populateInternationalGalaArrayList(){
+	/*public static void populateInternationalGalaArrayList(){
 		
 		
 		// create an array list of galas
@@ -315,7 +313,7 @@ public class GalaFrame extends JFrame{
 		
 
 			
-	}
+	}*/
 	
 	public class InternationalButtonIsSelectedHandler implements ActionListener{
 
@@ -375,8 +373,8 @@ public class GalaFrame extends JFrame{
 				int paymentAsInt = Integer.parseInt(payment);
 				
 				// add new gala to the array list
-				NationalGala newGala = new NationalGala(date, name, paymentAsInt);
-				nationalGalaArrayList.add(newGala);	
+			//	NationalGala newGala = new NationalGala(date, name, paymentAsInt);
+			//	nationalGalaArrayList.add(newGala);	
 				JOptionPane.showMessageDialog(null, "A Gala has been added");
 				GalaFrame.this.dispose();
 				
@@ -403,13 +401,13 @@ public class GalaFrame extends JFrame{
 				TypeOfTiming typeOfTiming = null;
 				typeOfTiming.valueOf(timing);
 				
-				InternationalGala newGala = new InternationalGala(date, name, paymentAsInt, city, country,
+			/*	InternationalGala newGala = new InternationalGala(date, name, paymentAsInt, city, country,
 						 organiserName, phoneNumberAsLong, organiserEmail, 
 						 address, durationAsInt, lengthAsInt, typeOfTiming);
 	
 				
 				internationalGalaArrayList.add(newGala);
-				JOptionPane.showMessageDialog(null, "A Gala has been added");
+				JOptionPane.showMessageDialog(null, "A Gala has been added");*/
 				GalaFrame.this.dispose();
 				
 			}

@@ -1,7 +1,6 @@
 package domainObjects;
 
 
-
 public class GalaEntry {
 
 	private static int id;
@@ -13,8 +12,8 @@ public class GalaEntry {
 		
 		id++;
 		setEntryId(entryId);
-		new Swimmer();
-		// some validation?
+		//new Swimmer();
+
 	}
 	
 	public void setEntryId(int entryId){

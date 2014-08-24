@@ -13,8 +13,7 @@ import com.toedter.calendar.JDateChooser;
 
 import db.PerformDatabaseOperations;
 import domainObjects.Swimmer;
-import aoop2_project.Swimmer.Gender;
-import aoop2_project.Swimmer.Status;
+import enumerations.*;
 
 public class RegisterSwimmerFrame extends JFrame{
 	
@@ -351,14 +350,14 @@ public class RegisterSwimmerFrame extends JFrame{
 				cal.setTime(dateOfBirth);
 		
 	
-				
+			/*	
 				Swimmer newSwimmer = new Swimmer(forename, surname, cal, Gender.valueOf(gender), phoneNumberAsInteger,
 												 email, medicalConditions, medication, nextOfKinName,
 												 nextOfKinPhoneNumberAsInteger, swimClub, Status.valueOf(status), level);
-				
+				*/
 			
 				PerformDatabaseOperations addNewSwimmerOperation = new PerformDatabaseOperations();
-				addNewSwimmerOperation.addSwimmerIntoTableSwimmers(newSwimmer);
+				//addNewSwimmerOperation.addSwimmerIntoTableSwimmers(newSwimmer);
 				JOptionPane.showMessageDialog(RegisterSwimmerFrame.this, "A swimmer has been added.");
 				//PerformDatabaseOperations testOnly = new PerformDatabaseOperations();
 				//testOnly.viewSwimmers();
