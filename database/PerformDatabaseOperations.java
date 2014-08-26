@@ -1,14 +1,11 @@
-package db;
+package database;
 
-
-import gui.AmendSwimmerFrame;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
@@ -474,7 +471,4 @@ public class PerformDatabaseOperations {
 		System.out.println("Swimmer with id of " + idEnteredByCustomer + " has been deleted.");
 		
 	}
-	
-	
-	
 }

@@ -11,7 +11,7 @@ import javax.swing.*;
 
 import com.toedter.calendar.JDateChooser;
 
-import db.PerformDatabaseOperations;
+import database.PerformDatabaseOperations;
 import domainObjects.Swimmer;
 import enumerations.*;
 
