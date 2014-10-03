@@ -13,4 +13,9 @@ public class Manager extends Employee {
 		this.age = 15;
 		this.salary = 14000;
 	}
+	
+	public double calculateSalary(double numberOfHours){
+		return numberOfHours*15;
+	}
+	
 }

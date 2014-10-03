@@ -13,6 +13,7 @@ public abstract class Employee{
 		this.salary = salary;
 	}
 
-
+	abstract double calculateSalary(double numberOfHours);
+	
 
 }

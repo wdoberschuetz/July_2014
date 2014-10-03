@@ -14,5 +14,8 @@ public class HourlyWorker extends Employee{
 		this.salary = 8.15;
 	}
 	
+	public double calculateSalary(double numberOfHours){
+		return numberOfHours*10;
+	}
 	
 }
